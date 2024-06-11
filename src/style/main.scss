@@ -1,0 +1,16 @@
+/*Estilização fundo do site */
+
+body {
+    background-color: #fdc200
+}
+
+/*Estilização Nome do Site */
+
+h1 {
+    color: rgb(3, 134, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura total da visualização */
+    margin: 0;
+}
