@@ -1,7 +1,7 @@
 /*Estilização fundo do site */
 
 body {
-    background-color: #fdc200
+    background-color:  rgb(1, 27, 1)
 }
 
 /*Estilização Nome do Site */
@@ -13,4 +13,13 @@ h1 {
     align-items: center;
     height: 100vh; /* Altura total da visualização */
     margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.nameofsite{
+    text-transform: initial;
 }
