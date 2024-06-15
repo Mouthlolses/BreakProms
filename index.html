@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Biblioteca para icones das redes sociais "Font Awesome"-->
     <title>Cupponizei</title>
     <link rel="stylesheet" href="src/style/main.css">
 </head>
 <body>
+    <!--Cabeçalho do Site-->
     <header class="header">
 
         <!--Logo do Site que fica ao lado do nome do site-->
         <div class="logo">
-            <img src="img/logs/imgs/Designer (7).jpeg" alt="Logo do Site">
+            <img src="img/logs/imgs/Designer (7).jpeg" alt="Logo do Site"><strong>Cupponizei</strong>
         </div>
 
         <nav class="nav">
             <ul>   <!--Lista de Categorias do site-->
                 <li><a href="#inicio" class="nav-link">Inicio</a></li>
                 <li><a href="#categorias" class="nav-link">Categorias</a></li>
-                <li><a href="#categorias" class="nav-link">Lojas</a></li>
+                <li><a href="#lojas" class="nav-link">Lojas</a></li>
                 <li><a href="#ofertas" class="nav-link">Ofertas</a></li>
                 <li><a href="#mais" class="nav-link">Mais</a></li>
             </ul>
@@ -28,17 +30,83 @@
             <div class="search-container">
                 <input type="text" class="search-input" placeholder="Pesquisar...">
                 <button type="submit" class="search-button">
-                    <img src="img/logs/imgs/Designer (7).jpeg" alt="Ícone de Pesquisa">
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
     </header>
 
-    <!-- Conteúdo da página -->
-    <div class="sections-container">
-        <section id="home">Home Section</section>
-        <section id="sobre">Sobre Section</section>
-        <section id="contato">Contato Section</section>
+    <!--contéudo principal da pagina-->
+    <main>
+     <div class="wrapper">
+        <!-- Conteúdo principal do site -->
+        <div class="content">
+            <!-- Adicione aqui o conteúdo da sua página -->
+             <article>
+                <header> <!-- Banner que poderá ser reutilizado-->
+                    <article class="banner">
+                        <img src="img/logs/imgs/2.png" alt="Banner do Site" class="banner-image">
+                        <div class="banner-content">
+                            <h1>Bem-vindo ao Nosso Site!</h1>                        
+                        </div>
+                    </article>
+                </header>
+             </article>
+            <section id="produtoone">Produto1</section>
+            <section id="produtotwo">Produto2</section>
+            <section id="produtothird">Produto3</section>
+            </div>
+        </div>
     </div>
-    
+</main>
+
+    <!-- Inicio do Rodapé-->
+     <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Sobre</h3>
+                <p>
+                    Informações sobre o site
+                </p>
+            </div>
+
+            <div class="footer-section links">
+                <h3>Links úteis para o site</h3>
+                <ul>
+                    <li><a href="#">Pagina inicial</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contato</h3>
+                <p>
+                    <span><i class="fas fa-map-marker-alt"></i> Endereço: Rua Exemplo, 123, Cidade</span>
+                    <br>
+                    <span><i class="fas fa-phone"></i> Telefone: (11) 1234-5678</span>
+                    <br>
+                    <span><i class="fas fa-envelope"></i> Email: contato@exemplo.com</span>
+                </p>
+            </div>
+
+            <div class="footer-section social">
+                <h3>Redes Sociais</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2024 | Todos os direitos reservados.
+        </div>
+     </footer>
+
+    <!--Fim do rodapé -->
+
+
     <script src="src/index.js"></script>
 </body>
 </html>
