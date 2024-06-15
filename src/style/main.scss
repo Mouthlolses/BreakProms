@@ -1,25 +1,126 @@
-/*Estilização fundo do site */
+$green-light-opaque: rgba(3, 56, 3, 0.8); // Verde claro opaco
+$white: #fff;
+$light-gray: #d3d3d3;
+$highlight: rgba(255, 255, 255, 0.2);
+$header-height: 70px; // Definindo a altura do cabeçalho
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    background-color:  rgb(1, 27, 1)
+    font-family: Arial, sans-serif;
+    padding-top: $header-height; // Adicionando espaçamento para evitar sobreposição do cabeçalho
+    background-color: #f0f0f0; // Cor de fundo para exemplo
 }
 
-/*Estilização Nome do Site */
-
-h1 {
-    color: rgb(3, 134, 248);
+.header {
+    background-color: $green-light-opaque; // Cor de fundo verde claro opaco
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 100vh; /* Altura total da visualização */
-    margin: 0;
-}
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: $header-height; // Definindo a altura do cabeçalho
 
-.container {
-    text-align: center;
-    padding-top: 20px;
-}
+    .logo {
+        display: flex;
+        align-items: center;
 
-.nameofsite{
-    text-transform: initial;
+        img {
+            width: 40px; // Ajuste o tamanho conforme necessário
+            height: auto;
+            margin-right: 10px; // Espaçamento entre a logo e o texto
+        }
+
+        span {
+            color: $white;
+            font-size: 1.8rem; // Tamanho do texto do nome do site
+            font-weight: bold;
+            text-transform: uppercase; // Transforma o texto para maiúsculas
+            letter-spacing: 1px; // Espaçamento entre as letras
+        }
+    }
+
+    .nav {
+        ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin-left: 1.5rem;
+
+                a {
+                    color: $white;
+                    text-decoration: none;
+                    font-size: 1rem;
+                    transition: background-color 0.3s, color 0.3s;
+
+                    &:hover,
+                    &.active {
+                        background-color: $highlight;
+                        color: $white;
+                        border-radius: 5px;
+                        padding: 5px 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .search-form {
+        display: flex;
+        align-items: center;
+
+        .search-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+
+            .search-input {
+                border: 1px solid $white;
+                background-color: transparent;
+                padding: 0.5rem 2rem 0.5rem 1rem; // Espaçamento ajustado para o ícone de pesquisa
+                color: $white;
+                border-radius: 0.25rem 0 0 0.25rem;
+                outline: none;
+                width: 300px; // Largura ajustável conforme necessário
+
+                &::placeholder {
+                    color: $white;
+                    opacity: 0.7;
+                }
+            }
+
+            .search-button {
+                background-color: $white;
+                border: none;
+                padding: 0.5rem;
+                border-radius: 0 0.25rem 0.25rem 0;
+                cursor: pointer;
+                transition: background-color 0.3s;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 30px; // Ajuste o tamanho conforme necessário
+                    height: auto;
+                    border: none; // Remover a borda do ícone
+                }
+
+                &:hover {
+                    background-color: $light-gray;
+                }
+            }
+        }
+    }
 }

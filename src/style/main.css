@@ -1,24 +1,107 @@
-@charset "UTF-8";
-/*Estilização fundo do site */
-body {
-  background-color: rgb(1, 27, 1);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/*Estilização Nome do Site */
-h1 {
-  color: rgb(3, 134, 248);
+body {
+  font-family: Arial, sans-serif;
+  padding-top: 70px;
+  background-color: #f0f0f0;
+}
+
+.header {
+  background-color: rgba(3, 56, 3, 0.8);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 70px;
+}
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+.header .logo img {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+.header .logo span {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.header .nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.header .nav ul li {
+  margin-left: 1.5rem;
+}
+.header .nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+.header .nav ul li a:hover, .header .nav ul li a.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.header .search-form {
+  display: flex;
+  align-items: center;
+}
+.header .search-form .search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.header .search-form .search-container .search-input {
+  border: 1px solid #fff;
+  background-color: transparent;
+  padding: 0.5rem 2rem 0.5rem 1rem;
+  color: #fff;
+  border-radius: 0.25rem 0 0 0.25rem;
+  outline: none;
+  width: 300px;
+}
+.header .search-form .search-container .search-input::-moz-placeholder {
+  color: #fff;
+  opacity: 0.7;
+}
+.header .search-form .search-container .search-input::placeholder {
+  color: #fff;
+  opacity: 0.7;
+}
+.header .search-form .search-container .search-button {
+  background-color: #fff;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0 0.25rem 0.25rem 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Altura total da visualização */
-  margin: 0;
 }
-
-.container {
-  text-align: center;
-  padding-top: 20px;
+.header .search-form .search-container .search-button img {
+  width: 30px;
+  height: auto;
+  border: none;
 }
-
-.nameofsite {
-  text-transform: initial;
+.header .search-form .search-container .search-button:hover {
+  background-color: #d3d3d3;
 }/*# sourceMappingURL=main.css.map */
