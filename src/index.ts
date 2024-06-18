@@ -1,18 +1,13 @@
-// Seleciona todos os links de navegação
-const navLinks = document.querySelectorAll('.nav-link');
+/*para se comunicar com o backend:*/
 
-// Função para remover a classe 'active' de todos os links
-function removeActiveClass() {
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-    });
-}
-
-// Adiciona um evento de clique a cada link
-navLinks.forEach(link => {
-    link.addEventListener('click', (event) => {
-        event.preventDefault(); // Evita o comportamento padrão do link
-        removeActiveClass(); // Remove a classe 'active' de todos os links
-        link.classList.add('active'); // Adiciona a classe 'active' ao link clicado
-    });
-});
+async function fetchData() {
+    try {
+      const response = await fetch('http://localhost:3000/api/data');
+      const data = await response.json();
+      console.log(data.message);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  }
+  
+  fetchData();
