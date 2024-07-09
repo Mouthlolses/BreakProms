@@ -139,6 +139,12 @@ body {
   gap: 10px; /* Espaçamento entre os itens */
 }
 
+.container5 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta colunas automaticamente */
+  gap: 10px; /* Espaçamento entre os itens */
+}
+
 .produto {
   flex: 1 1 200px; /* Flex-grow, flex-shrink, flex-basis */
   margin: 10px; /* Espaçamento entre as seções */
