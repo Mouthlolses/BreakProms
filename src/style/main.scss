@@ -1,4 +1,4 @@
-$green-light-opaque: rgba(3, 56, 3, 0.8); // Verde claro opaco
+$green-light-opaque: rgba(122, 116, 126, 0.8); // Verde claro opaco
 $white: #fff;
 $light-gray: #d3d3d3;
 $highlight: rgba(255, 255, 255, 0.2);
@@ -36,9 +36,9 @@ body {
         align-items: center;
 
         img {
-            width: 40px; // Ajuste o tamanho conforme necessário
+            width: 50px; // Ajuste o tamanho conforme necessário
             height: auto;
-            margin-right: 10px; // Espaçamento entre a logo e o texto
+            margin-right: 20px; // Espaçamento entre a logo e o texto
         }
 
         span {
