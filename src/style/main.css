@@ -14,7 +14,7 @@ body {
 .header {
   position: fixed;
   bottom: 0;
-  background-color: rgba(3, 56, 3, 0.8);
+  background-color: rgba(42, 39, 43, 0.8);
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -52,7 +52,7 @@ body {
   margin-left: 1.5rem;
 }
 .header .nav ul li a {
-  color: #fff;
+  color: #518d4b;
   text-decoration: none;
   font-size: 1rem;
   transition: background-color 0.3s, color 0.3s;
