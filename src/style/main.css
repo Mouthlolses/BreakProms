@@ -1,5 +1,5 @@
 @charset "UTF-8";
-* {
+/* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -107,7 +107,7 @@ body {
 }
 .header .search-form .search-container .search-button:hover {
   background-color: #d3d3d3;
-}
+}*/
 
 @media (max-width: 600px) {
   .produto {
